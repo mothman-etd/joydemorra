@@ -1,0 +1,26 @@
+{
+  "url": "http://192.168.0.40:2368",
+  "server": {
+    "port": 2367,
+    "host": "192.168.0.40"
+  },
+  "database": {
+    "client": "sqlite3",
+    "connection": {
+      "filename": "/var/www/ghostblog/content/data/ghost.db"
+    }
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "process": "systemd",
+  "paths": {
+    "contentPath": "/var/www/ghostblog/content"
+  }
+}
